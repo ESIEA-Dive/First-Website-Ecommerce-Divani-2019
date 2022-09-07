@@ -1,0 +1,984 @@
+*{margin: 0; padding: 0;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+#header{
+    background: whitesmoke;
+    height: 110px; width: 100%;
+}
+
+#logo{
+    width: 20%;
+    height: 110px;
+    float: left;
+}
+
+@-webkit-keyframes blink-1 {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+  @keyframes blink-1 {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+  
+@-webkit-keyframes slide-in-blurred-tl {
+    0% {
+      -webkit-transform: translate(-1000px, -1000px) skew(80deg, 10deg);
+              transform: translate(-1000px, -1000px) skew(80deg, 10deg);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translate(0, 0) skew(0deg, 0deg);
+              transform: translate(0, 0) skew(0deg, 0deg);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-in-blurred-tl {
+    0% {
+      -webkit-transform: translate(-1000px, -1000px) skew(80deg, 10deg);
+              transform: translate(-1000px, -1000px) skew(80deg, 10deg);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translate(0, 0) skew(0deg, 0deg);
+              transform: translate(0, 0) skew(0deg, 0deg);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+.slide-in-blurred-tl {
+	-webkit-animation: slide-in-blurred-tl 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-tl 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.blink-1:hover {
+	-webkit-animation: blink-1 0.6s both;
+	        animation: blink-1 0.6s both;
+}
+
+#logo img{
+    width: 50%;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#link{
+    width: 80%;
+    height: 50px;
+    float: left;
+}
+
+#link ul{
+    list-style: none;
+    margin-right: 20px;
+}
+
+#link ul li{
+    float: right;
+    margin-left: 30px;
+    line-height: 30px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#link ul li:hover{
+    background: rgb(0, 204, 0);
+}
+
+#link ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+#link ul li form{
+    border-radius: 3px;
+    width: auto;
+    padding: 2%;
+    display:none; 
+    position:absolute; 
+    background:rgb(0, 204, 0); 
+    margin-left:-385px;
+}
+
+#link ul li form table{
+    width: 100%;
+}
+
+#link ul li form table tr td{
+    width: 48%;
+    height: 35px;
+}
+
+#link ul li form table tr td input{
+    padding-left: 3%;
+    width: 100%;
+    height: 30px ;
+    border-radius: 3px;
+    border: 1px solid rgb(0, 0, 0);
+
+}
+
+#link ul li form table tr td input textarea{
+    padding-left: 3%;
+}
+
+#btn{
+    float: left;
+    margin-top: 1%;
+    padding: 2%;
+    width: 40px; 
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    width: 50%;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background: black;
+    color: rgb(0, 204, 0);
+}
+
+#link ul li:hover form{ 
+    display:block;  
+}
+
+#link ul li ul{
+    display:none
+}
+
+#link ul li ul li{
+    width:100%; 
+    box-sizing:border-box; 
+    text-align:left !important
+}
+
+#link ul li ul li a{
+    display:block; 
+    padding-left:5%;  
+    font-size:12px
+}
+
+#link ul li:hover ul{
+    margin-left:-134px; 
+    background:rgb(0, 204, 0); 
+    display:block; 
+    width:25%; 
+    position:absolute; 
+    z-index:1000
+}
+
+#link ul li ul li:hover{
+    background:rgb(0, 0, 0);    
+}
+#link ul li ul li:hover a{    
+    color: rgb(0, 204, 0);
+}
+
+
+#search form input{
+    width: 55%;
+    height: 35px;
+    padding-left: 2% ;
+    outline: none;
+    border-width: 0px;
+    border-radius: 10px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#search_btn{
+    border-width:0px; 
+    width:10%; 
+    height:35px; 
+    line-height: 35px;
+    background: rgb(0, 204, 0); 
+    color:#fff; 
+    font-weight:bold;
+    cursor: pointer;
+    margin-left: -15px;
+    border-top-right-radius: 3px ;
+    border-bottom-right-radius: 3px ;
+}
+
+#cart_btn{
+    border-radius:3px; 
+    border-width:0px; 
+    width:10%; 
+    height:35px;
+    line-height: 35px; 
+    background: rgb(0, 204, 0); 
+    color:#fff; 
+    font-weight:bold;
+    cursor: pointer
+}
+
+#cart_btn a{
+    text-decoration:none; 
+    color:#fff;
+    display: block;
+}
+
+#cart{
+    min-height:480px; 
+    background:#fff
+}
+
+.cart{
+    width: 100%;
+    padding: 1%;
+    box-sizing: border-box;
+    min-height: 500px;
+}
+
+.cart form table{
+    width: 100%;
+}
+
+.cart form table tr th{
+    font-size: 14px;
+    padding-left: 2%;
+    text-align: left;
+    background: rgb(0, 204, 0);
+    height: 30px;
+    color: black;
+}
+
+.cart form table tr td{
+    padding-left: 2%;
+    height: 60px;
+}
+
+.cart form table tr td img{
+    width: 50px;
+    height: 50px;
+}
+
+.cart form table tr td input[type=text]{
+    padding-left: 1%;
+    width: 10%;
+    height: 30px;
+}
+.cart form table tr td input[type=submit]{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 20%;
+    height: 30px;
+    border: 1px solid rgb(0, 204, 0);
+}
+.cart form table tr td input[type=submit]:hover{
+    background: rgb(0, 204, 0);
+    cursor: pointer;
+}
+
+#navbar{
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    background: rgb(0, 204, 0);
+}
+
+#navbar ul{
+    line-height: 40px;
+    padding-left:1%;
+    list-style-type: none;
+}
+
+#navbar ul li{
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+    float: left;
+}
+
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+#navbar ul li:hover{
+    text-shadow: 3px 3px 3px rgb(0, 204, 0);
+    background:rgb(0, 0, 0) ;
+    border-top:3px solid whitesmoke ;
+}
+#navbar li:hover a{
+    color: rgb(0, 204, 0);
+}
+
+
+#navbar li ul {
+    display: none !important;
+}
+
+#navbar li:hover ul {
+    box-shadow: 3px 3px 3px black;
+    padding-left:0%;
+    margin-left: -10px;
+    margin-top: -5px;
+    background: rgb(0, 204, 0);
+    display: block !important;
+    width: 150px;
+    z-index: 999;
+    position: absolute;
+} 
+#navbar li:hover ul a {
+    color: rgb(255, 255, 255);
+}
+
+#navbar li ul li {
+    padding-left: 5%;
+    height: 20px;
+    line-height: 20px;
+    float: none;
+}
+
+#navbar li ul li a{
+    display: block;
+}
+
+#bodyleft{
+    padding: 1%S;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 72%;
+    background:whitesmoke;
+    margin: 1%;
+    float: left;
+}
+
+#bodyleft h2{
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    background: rgb(0, 204, 0);
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    text-align: center;
+    height: 40px;
+    color: whitesmoke;
+    line-height: 40px;
+}
+
+#bodyleft ul{
+    list-style-type: none;
+    padding-bottom: 1%;
+}
+
+#bodyleft ul li{
+    box-shadow: 3px 3px 3px rgb(0, 204, 0);
+    margin-top: 5px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    margin-left: 1%;
+    float: left;
+    width: 31%;
+    min-height: 350px;
+    border: 4px solid rgb(0, 0, 0);
+}
+
+#bodyleft ul li a{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    color: rgb(0, 0, 0);
+}
+
+#bodyleft ul li a h4{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 5px;
+    font-size: 14px
+}
+
+#bodyleft ul li a img{
+    width: 100%;
+    height: 280px;
+    margin-bottom: 10px;
+}
+
+#pro_btn{
+    width: 30%;
+    height: 30px;
+    line-height: 30px;
+    background: whitesmoke;
+    border-radius: 3px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+#pro_btn:hover{
+    background: rgb(0, 0, 0)
+}
+
+#pro_btn:hover a{
+    color: rgb(0, 204, 0);
+}
+
+#pro_btn:hover i{
+    color: rgb(0, 204, 0);
+}
+
+#bodyleft h3{
+    box-shadow: 3px 3px 3px rgb(0, 204, 0);
+    text-shadow: 3px 3px 3px rgb(0, 204, 0);
+    line-height: 40px;
+    height: 40px;
+    border-radius: 3px;
+    background: rgb(0, 0, 0);
+    color: rgb(0, 204, 0);
+    padding-left: 5%
+}
+
+
+#pro_img {
+    padding: 1%;
+    box-sizing: border-box;
+    float: left;
+    width: 40%;
+    height: 500px;
+    background:whitesmoke ;
+}
+
+#pro_img img {
+    margin-top: 5px;
+    width: 100%;
+    height: 450px;
+    background:whitesmoke
+}
+
+#pro_img ul {
+    list-style-type: none;
+}
+
+#pro_img ul li {
+    float: left;
+}
+
+#pro_img ul li img {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+}
+
+#pro_features {
+    padding: 1%;
+    box-sizing: border-box;
+    float: left;
+    width: 60%;
+    height: 550px;
+    background:whitesmoke ;
+}
+
+#pro_features h3{
+    margin-top: 10px;
+    text-align: center;
+    height: 35px;
+    border-bottom: 1px solid rgb(0, 204, 0)
+}
+#pro_features ul {
+    margin-top: 20px;
+    width: 50%;
+    float: left;
+}
+#pro_features ul li{
+    padding-left: 3%;
+    list-style-position: inside;
+    list-style-type: circle;
+    height: 30px;
+}
+
+#buy_now {
+    border-radius: 3px;
+    width: 180px;
+    height: 30px;
+    background: whitesmoke;
+    border-radius: 3px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#buy_now:hover {
+    background: rgb(0, 204, 0) ;
+    color: whitesmoke;
+}
+#buy_now a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+#buy_now:hover a{
+    color: white;
+}
+
+#sim_pro{
+    padding-top: 10px;
+    background: whitesmoke;
+    width: 100%;
+    height: 350px;
+}
+
+#sim_pro h3{
+    background: rgb(0, 204, 0) ;
+    color: whitesmoke;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#sim_pro ul{
+    list-style-type: none;
+}
+
+#sim_pro ul li{
+    padding: 0.5%;
+    border: solid whitesmoke;
+    margin-top: 10px;
+    width: 180px;
+    margin-left: 20px;
+    float: left;
+}
+
+#sim_pro ul li:hover {
+    border-radius: 3px;
+    border: solid rgb(0, 204, 0);
+}
+#sim_pro ul li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+#sim_pro ul li a img{
+    width: 180px;
+    height: 230px;
+}
+
+#pro_features h4{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+#slider {
+    width: 100%;
+    height: 450px;
+}
+
+#slider img{
+    width: 100%;
+    height: 400px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#bodyright{
+    height: auto;
+    border-radius: 3px;
+    width: 25%;
+    background: whitesmoke;
+    margin: 1% 1% 1% 0%;
+    float: left;
+}
+
+#bodyright h3{
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    background: rgb(0, 204, 0);
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    text-align: center;
+    height: 40px;
+    color: whitesmoke;
+    line-height: 40px;
+}
+
+#bodyright ul{
+    list-style-type:none
+}
+
+#bodyright ul li a img{
+    width:100%; 
+    height:150px
+}
+
+.bodyright ul{
+    list-style-type: none;
+}
+
+.bodyright ul li { 
+    height: 35px;
+    width: 100%;
+    line-height: 35px;
+    padding-left: 5%;
+}
+
+.bodyright ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.bodyright ul li a:hover{
+    text-decoration: underline;
+    color: rgb(0, 204, 0);
+}
+
+#user_left{
+    margin:1%; 
+    width:75%; 
+    height:520px; 
+    background:#fff; 
+    float:left
+}
+
+#user_left h3{
+    border-top-left-radius:3px; 
+    border-top-right-radius:3px;
+    line-height:40px; 
+    background:rgb(0, 204, 0); 
+    height:40px; 
+    text-align:center; 
+    color:#fff
+}
+
+#user_left form table{
+    width:98%; 
+    margin:2%;
+}
+
+#user_left form table tr td{
+    width:50%; 
+    height:40px
+}
+
+#user_left form table tr td input{
+    width:98%; 
+    height:35px; 
+    outline:none; 
+    padding-left:4%; 
+    box-sizing:border-box
+}
+
+#user_left form table tr td input[type=file]{
+    width:98%; 
+    height:35px; 
+    outline:none; 
+    padding-left:4%; 
+    box-sizing:border-box
+}
+
+#user_left form input[type=submit]{
+    width:20%;
+    height:40px; 
+    background:#fff; 
+    border:2px solid rgb(0, 204, 0); 
+    border-radius:3px
+}
+
+#user_left form input[type=submit]:hover{
+    cursor:pointer; 
+    transition:all 0.2s; 
+    background:rgb(0, 204, 0); 
+    color:#fff
+}
+
+.myorder{width:100%; 
+    overflow-x:scroll; 
+    padding:1%; 
+    box-sizing:border-box; 
+    background:#fff; 
+    height:480px;
+}
+
+.myorder table{
+    width:160% !important
+}
+
+.myorder table tr th{
+    font-size:14px; 
+    background:rgb(0, 204, 0); 
+    height:40px; 
+    color:black; 
+    text-align:left; 
+    padding-left:1%; 
+}
+
+.myorder table tr td{
+    font-size:14px; 
+    height:60px; 
+    width:10% !important; 
+    padding-left:1.2%;
+}
+
+.myorder table tr td img{
+    width:50px; 
+    height:50px
+}
+
+.myorder table tr td input[type=text]{
+    padding-left:1%; 
+    width:22% !important; 
+    height:30px;
+}
+
+.myorder table tr td input[type=submit]{
+    background:#fff; 
+    color:#000; 
+    width:30% !important; 
+    height:35px !important; 
+    border:1px solid rgb(0, 204, 0)
+}
+
+.myorder table tr td input[type=submit]:hover{
+    background:rgb(0, 204, 0); 
+    color:#fff; 
+    cursor:pointer
+}
+
+.mycart{
+    width:100% !important; 
+    overflow-x:scroll; 
+    padding:1%; 
+    box-sizing:border-box; 
+    background:#fff; 
+    height:480px;
+}
+
+.mycart table{
+    width:120% !important
+}
+
+.mycart table tr th{
+    font-size:14px; 
+    background:rgb(0, 204, 0); 
+    height:40px; 
+    width:15% !important; 
+    color:rgb(0, 0, 0); 
+    text-align:left; 
+    padding-left:1%; 
+}
+
+.mycart table tr td{
+    font-size:14px; 
+    height:60px; 
+    padding-left:1%; 
+    width:15% !important;
+}
+
+.mycart table tr td img{
+    width:50px; 
+    height:50px
+}
+
+.mycart table tr td input[type=text]{
+    padding-left:1%; 
+    width:15% !important; 
+    height:30px;
+}
+
+.mycart table tr td input[type=submit]{
+    background:whitesmoke; 
+    color:#000; 
+    width:30% !important; 
+    height:35px !important; 
+    border:1px solid rgb(0, 204, 0)
+}
+
+.mycart table tr td input[type=submit]:hover{
+    background:rgb(0, 204, 0); 
+    color:#fff; 
+    cursor:pointer
+}
+
+
+#user_right{
+    margin:1% 1% 1% 0%; 
+    width:22%; 
+    height:500px; 
+    background:#fff; 
+    float:left
+}
+
+#user_right h3{
+    border-top-left-radius:3px; 
+    border-top-right-radius:3px; 
+    line-height:40px; 
+    background:rgb(0, 204, 0); 
+    height:40px; 
+    text-align:center; 
+    color:#fff
+}
+
+#user_right img{
+    margin:3%; 
+    width:94%; 
+    height:200px
+}
+
+#user_right ul{
+    list-style-type:none
+}
+
+#user_right ul li{
+    width:100%; 
+    padding-left:5%; 
+    box-sizing:border-box; 
+    height:35px; 
+    line-height:35px
+}
+
+#user_right ul li:hover{ 
+    background: rgb(0, 204, 0)
+}
+
+#user_right ul li:hover a{
+    color: black
+}
+
+#user_right ul li a{
+    display:block; 
+    text-decoration:none; 
+    color:#2e2e2e; 
+    font-weight:bold
+}
+
+#checkout_user{
+    padding:2%; 
+    box-sizing:border-box; 
+    width:100%; 
+    background:#fff
+}
+
+#checkout_user h2{
+    width:100%; 
+    height:40px; 
+    font-size:18px; 
+    padding-left:2%; 
+    box-sizing:border-box; 
+    margin-top:10px; 
+    margin-bottom:10px; 
+    border-radius:3px; 
+    line-height:40px; 
+    color:#fff; 
+    background:rgb(0, 204, 0)
+}
+
+#checkout_user_left{
+    width:20%; 
+    padding:1%; 
+    box-sizing:border-box; 
+    border:2px solid rgb(0, 204, 0); 
+    border-radius:3px; 
+    float:left; 
+    margin-bottom:10px !important;
+}
+
+#checkout_user_left h3{
+    font-weight:normal; 
+    color:#333; 
+    margin-bottom:10px;
+}
+
+#checkout_user_left p{
+    font-size:14px; 
+    margin-top:5px;
+}
+
+#checkout_user_right{
+    margin-left:2%; 
+    width:78%; 
+    padding:1%; 
+    box-sizing:border-box; 
+    border:2px solid rgb(0, 204, 0); 
+    border-radius:3px; 
+    float:left; 
+    margin-bottom:10px !important;
+}
+
+#checkout_user_right form table{
+    width:100%;
+}
+
+#checkout_user_right form table tr td{
+    width:50%; 
+    height:30px; 
+    font-size:14px;
+}
+
+#checkout_user_right form table tr td input[type=text]{
+    width:100%; 
+    height:30px; 
+    outline:none; 
+    border-radius:3px; 
+    padding-left:2%; 
+    box-sizing:border-box
+}
+
+#checkout_user_right form table tr td input[type=text]:hover{
+    border:2px solid rgb(0, 204, 0)
+}
+
+#checkout_user_right form input[type=submit]{
+    margin-top:10px; 
+    width:20%; 
+    height:35px; 
+    background:#fff; 
+    border:2px solid rgb(0, 204, 0); 
+    border-radius:3px
+}
+
+#checkout_user_right form input[type=submit]:hover{
+    cursor:pointer; 
+    background:rgb(0, 204, 0); 
+    color:#fff; 
+    transition:all 0.3s
+}
+
+#delete{
+    margin-left: 27px ;
+    color: rgb(201, 15, 15);
+}
+
+#footer {
+    width: 100%;
+    height: 35px;
+    background: rgb(0, 204, 0);
+}
+
+#footer h4{
+    text-align: center;
+    color: whitesmoke;
+    line-height: 35px
+}

@@ -1,0 +1,628 @@
+*{padding: 0;margin: 0;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+body{
+    background: rgba(0, 0, 0, 0.938);
+    padding: 1%;
+    box-sizing:border-box !important;
+}
+
+#login{
+    background: rgb(0, 204, 0); 
+    padding:1% 1% 1% 1%; 
+    box-sizing:border-box; 
+    width:50%; 
+    margin:auto !important
+}
+
+#login h3{
+    background:whitesmoke; 
+    text-align:center; 
+    height:50px; 
+    line-height:50px; 
+    margin-bottom:2%; 
+    color: rgb(0, 204, 0);
+}
+
+#login table{
+    width:100%;
+}
+
+#login table tr td{
+    width:50%; 
+    color:#fff; 
+    height:40px;
+}
+
+#login table tr td input{
+    width:100%; 
+    height:30px; 
+    outline:none !important; 
+    padding-left:2%; 
+    box-sizing:border-box; 
+    padding-right:2%;
+}
+
+#login_btn{
+    width:50%; 
+    height:35px; 
+    background:none; 
+    outline:none; 
+    border:2px solid #000000; 
+    border-radius:3px;
+    margin-top:2%; 
+    color:rgb(255, 255, 255)
+}
+
+#login_btn:hover{
+    background:#000000; 
+    cursor:pointer;
+    color: rgb(0, 204, 0);
+}
+
+#header{
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    background: whitesmoke ;
+    border-radius: 3px;
+}
+
+#header h1{
+    width:100%; 
+    height:50px; 
+    line-height:50px; 
+    padding:0% 1% 0% 1%; 
+    color:rgb(0, 204, 0); 
+    font-size:20px
+}
+
+
+  
+  @-webkit-keyframes slide-in-blurred-tr {
+    0% {
+      -webkit-transform: translate(1000px, -1000px) skew(-80deg, -10deg);
+              transform: translate(1000px, -1000px) skew(-80deg, -10deg);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translate(0, 0) skew(0deg, 0deg);
+              transform: translate(0, 0) skew(0deg, 0deg);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-blurred-tr {
+    0% {
+      -webkit-transform: translate(1000px, -1000px) skew(-80deg, -10deg);
+              transform: translate(1000px, -1000px) skew(-80deg, -10deg);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translate(0, 0) skew(0deg, 0deg);
+              transform: translate(0, 0) skew(0deg, 0deg);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes slide-in-blurred-tl {
+    0% {
+      -webkit-transform: translate(-1000px, -1000px) skew(80deg, 10deg);
+              transform: translate(-1000px, -1000px) skew(80deg, 10deg);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translate(0, 0) skew(0deg, 0deg);
+              transform: translate(0, 0) skew(0deg, 0deg);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-blurred-tl {
+    0% {
+      -webkit-transform: translate(-1000px, -1000px) skew(80deg, 10deg);
+              transform: translate(-1000px, -1000px) skew(80deg, 10deg);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translate(0, 0) skew(0deg, 0deg);
+              transform: translate(0, 0) skew(0deg, 0deg);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes flip-scale-up-hor {
+    0% {
+      -webkit-transform: scale(1) rotateX(0);
+              transform: scale(1) rotateX(0);
+    }
+    50% {
+      -webkit-transform: scale(2.5) rotateX(-1180deg);
+              transform: scale(2.5) rotateX(-180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateX(-360deg);
+              transform: scale(1) rotateX(-360deg);
+    }
+  }
+  @keyframes flip-scale-up-hor {
+    0% {
+      -webkit-transform: scale(1) rotateX(0);
+              transform: scale(1) rotateX(0);
+    }
+    50% {
+      -webkit-transform: scale(2.5) rotateX(-180deg);
+              transform: scale(2.5) rotateX(-180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateX(-360deg);
+              transform: scale(1) rotateX(-360deg);
+    }
+  }
+  
+.flip-scale-up-hor:hover {
+	-webkit-animation: flip-scale-up-hor 0.5s linear both;
+	        animation: flip-scale-up-hor 0.5s linear both;
+}  
+.slide-in-blurred-tl {
+	-webkit-animation: slide-in-blurred-tl 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-tl 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+.slide-in-blurred-tr {
+	-webkit-animation: slide-in-blurred-tr 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-tr 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+    
+#header h1 b{
+    text-shadow:1px 1px 1px rgb(0, 0, 0)
+}
+
+#header h1 b span{
+    text-shadow:1px 1px 1px rgb(0, 204, 0)
+}
+
+#header h1 b span{
+    color:#000000 !important
+}
+
+
+#header h1 label{
+    margin-left:70% !important;
+}
+
+#header h1 label a{
+    text-decoration:none; 
+    color:rgb(0, 204, 0); 
+    font-weight:normal; 
+    font-size:16px;
+}
+
+#main_part{
+    padding:2%; 
+    box-sizing:border-box
+}
+
+#part{
+    width:29%; 
+    height:120px; 
+    border-radius:3px; 
+    float:left; 
+    margin:2% 2% 2% 2%
+}
+
+#part h4{
+    font-size:14px; 
+    color:#fff; 
+    width:60%; 
+    height:90px; 
+    float:left; 
+    font-weight:normal; 
+    padding:8% 4% 4% 8%; 
+    box-sizing:border-box
+}
+
+#part h2{
+    color:#fff; 
+    width:40%; 
+    height:90px; 
+    float:left; 
+    padding:8% 4% 4% 8%; 
+    box-sizing:border-box
+}
+
+#part h2 i{
+    font-size:45px;
+}
+
+#part p{
+    width:100%; 
+    height:30px; 
+    text-align:center; 
+    line-height:30px
+}
+
+#part p a{
+    text-decoration:none; 
+    color:#fff; 
+    font-size:12px; 
+    display:block
+}
+
+#bodyleft{
+    float: left;
+    border-radius: 3px;
+    margin: 20px 10px 10px 0px ;
+    width: 24%;
+    height: 580px;
+    background: whitesmoke;
+    overflow: auto;
+}
+
+#bodyleft h3{
+    font-size: 14px;
+    background: rgb(0, 204, 0);
+    color: whitesmoke;
+    height: 42px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#bodyleft ul{
+    list-style-type: none;
+}
+
+#bodyleft ul li{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-radius: 3px;
+    background:whitesmoke;
+    height: 30px;
+    line-height: 30px;
+}
+
+#bodyleft ul li a{
+    display: block;
+    text-decoration: none;
+    color:rgb(0, 204, 0);
+    padding-left: 3%;
+}
+
+#bodyleft ul li a:hover{
+    color: white;
+    background: black;
+}
+
+#bodyleft::-webkit-scrollbar{
+    background-color:rgb(0, 204, 0); 
+    height:20px;
+}
+
+#bodyleft::-webkit-scrollbar-thumb{
+    background-color:whitesmoke; 
+    border-radius:3px; 
+    border:3px solid rgb(0, 204, 0)
+}
+
+#bodyleft::-webkit-scrollbar-button:horizontal:increment{
+    background:whitesmoke; 
+    border:2px solid rgb(0, 204, 0)
+}
+
+#bodyleft::-webkit-scrollbar-button:horizontal:decrement{
+    background:whitesmoke; 
+    border:2px solid rgb(0, 204, 0)
+}
+
+#bodyleft::-webkit-scrollbar-button:vertical:increment{
+    background:whitesmoke; 
+    border:2px solid rgb(0, 204, 0)
+}
+
+#bodyleft::-webkit-scrollbar-button:vertical:decrement{
+    background:whitesmoke; 
+    border:2px solid rgb(0, 204, 0)
+}
+
+#scroll{
+    height:400px; 
+    overflow:auto
+}
+
+#search{
+    width:100%; 
+    padding:1%; 
+    box-sizing:border-box;
+}
+
+#search input{
+    width:74%;
+    padding-left:2%;
+    box-sizing:border-box; 
+    height:29px; 
+    font-size:12px; 
+    outline:none; 
+    border:2px solid #000000
+}
+
+#search button{
+    width:25% !important; 
+    height:32px !important; 
+    margin-left:-1% !important;
+}
+
+#search button:hover{
+    cursor:pointer
+}
+
+#bodyright{
+    padding-bottom: 2% ;
+    margin: 20px 0px 10px 0px;
+    float: left;
+    border-radius: 3px;
+    width: 74.8%;
+    min-height: 553px;
+    background: whitesmoke;
+
+}
+
+#bodyright h3{
+    border-bottom: 2px solid rgb(0, 204, 0);
+    background: rgb(0, 204, 0);
+    color: whitesmoke;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#bodyright form table{
+    width: 95%;
+    margin:auto;
+    margin-top: 10px;
+
+}
+
+#bodyright form table tr th{
+
+    border-radius: 3px;
+    box-sizing:border-box; 
+    font-size:16px; 
+    color:#fff; 
+    text-align:center; 
+    background:rgb(0, 204, 0); 
+    height:40px; 
+}
+
+#bodyright form table tr td{
+    text-align: center;
+    padding-left: 1.1%;
+    color: rgb(0, 204, 0);
+    min-width: 50%;
+    height: 35px;
+}
+
+#bodyright form table tr td input{
+    padding-left: 2%;
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    border:1px solid whitesmoke;
+}
+
+#bodyright form button{
+    margin-top: 20px;
+    color: whitesmoke;
+    height: 30px;
+    border-radius: 3px;
+    width: 200px;
+    background: rgb(0, 204, 0);
+    border: 2px solid whitesmoke;
+}
+
+#bodyright form button:hover{
+    background: black ;
+    color: rgb(0, 204, 0);
+}
+
+#bodyright form table tr td select{
+    padding-left: 2%;
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    border:1px solid whitesmoke;
+}
+
+#bodyright form table tr td a{
+    text-decoration: none;
+    color:rgb(0, 204, 0);
+}
+
+#bodyright::-webkit-scrollbar{
+    background-color:rgb(0, 204, 0); 
+    height:20px;
+}
+
+#bodyright::-webkit-scrollbar-thumb{
+    background-color:whitesmoke; 
+    border-radius:3px; 
+    border:3px solid rgb(0, 204, 0)
+}
+
+#bodyright::-webkit-scrollbar-button:horizontal:increment{
+    background:whitesmoke; 
+    border:2px solid rgb(0, 204, 0)
+}
+
+#bodyright::-webkit-scrollbar-button:horizontal:decrement{
+    background:whitesmoke; 
+    border:2px solid rgb(0, 204, 0)
+}
+
+#bodyright::-webkit-scrollbar-button:vertical:increment{
+    background:whitesmoke; 
+    border:2px solid rgb(0, 204, 0)
+}
+
+#bodyright::-webkit-scrollbar-button:vertical:decrement{
+    background:whitesmoke; 
+    border:2px solid rgb(0, 204, 0)
+}
+
+#add_cat{
+ padding-top: 20px;
+ border-top: 2px solid whitesmoke;
+}
+
+.scroll{
+    overflow-x:scroll; 
+    height:460px; 
+    overflow-y:scroll
+}
+.scroll form table tr th {
+    text-align: center !important;
+    padding: 0%;
+    font-size: 15px !important;
+}
+.scroll form table tr td {
+    
+    text-align: center;
+    padding-left: 0% !important;
+    min-width: 175px !important;
+    height: 35px;
+}
+.scroll form table tr td img{
+    height: 35px;
+    width: 35px;
+}
+
+.scroll::-webkit-scrollbar{
+    background-color:rgb(0, 204, 0); 
+    height:20px;
+}
+
+.scroll::-webkit-scrollbar-thumb{
+    background-color:whitesmoke; 
+    border-radius:3px; 
+    border:3px solid rgb(0, 204, 0)
+}
+
+.scroll::-webkit-scrollbar-button:horizontal:increment{
+    background:whitesmoke; 
+    border:2px solid rgb(0, 204, 0)
+}
+
+.scroll::-webkit-scrollbar-button:horizontal:decrement{
+    background:whitesmoke; 
+    border:2px solid rgb(0, 204, 0)
+}
+
+.scroll::-webkit-scrollbar-button:vertical:increment{
+    background:whitesmoke; 
+    border:2px solid rgb(0, 204, 0)
+}
+
+.scroll::-webkit-scrollbar-button:vertical:decrement{
+    background:whitesmoke; 
+    border:2px solid rgb(0, 204, 0)
+}
+
+#invoice{
+    width:100%; 
+    background:#fff;
+}
+
+#invoice h3{
+    border-radius: 3px;
+    background:rgb(0, 204, 0) !important; 
+    height:50px; color:#fff; 
+    line-height:50px; 
+    padding-left:3%; 
+    box-sizing:border-box
+}
+
+#invoice div{
+    padding:1%; 
+    box-sizing:border-box; 
+    float:left; 
+    width:33.3%; 
+    margin-top:1%
+}
+
+#invoice div h4{
+    font-size:20px; 
+    color:rgb(0, 204, 0); 
+    margin-bottom:2% !important
+}
+
+#invoice div p{
+    margin-top:2%; 
+    margin-bottom:2%
+}
+
+#invoice table{
+    width:98%; 
+    margin:auto !important; 
+    margin-top:2% !important
+}
+
+#invoice table tr th{
+    background:rgb(0, 0, 0); 
+    text-align:center !important; 
+    width:25% !important; 
+    height:50px !important;
+    color: rgb(0, 204, 0);
+}
+
+#invoice table tr td{
+    border-bottom:2px solid rgb(0, 0, 0); 
+    text-align:center !important; 
+    width:25% !important; 
+    height:35px !important; 
+    padding-bottom:2% !important; 
+    padding-top:2% !important;
+}
+
+#invoice button{
+    float:right; 
+    margin-top:20px; 
+    height:30px; 
+    color:#000; 
+    border-radius:3px;
+    width:10%; 
+    background:none; 
+    border:2px solid rgb(0, 204, 0)
+}
+
+#invoice button:hover{
+    background:rgb(0, 204, 0); 
+    color:#fff; 
+    cursor:pointer
+}
