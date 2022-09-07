@@ -1,0 +1,2 @@
+# First-Website-Ecommerce-Divani-2019
+This my first experience as a software Engineer in my third year in university. I had only learned html and css at this point during my web making journey. I decided to go further beyond and learn a new language on my own which was Php. The desing is a little bit older since it was my first site, but the site works very well with an admin panel that can add products etc etc , the UX works smoothly.
